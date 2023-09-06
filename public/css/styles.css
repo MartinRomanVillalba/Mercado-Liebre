@@ -114,6 +114,11 @@ main section article{
     background-color: #FFF;
 }
 
+main article{
+    padding: 0;
+    margin-bottom: 10px;
+}
+
 main section article img{
     width: 100%;
 }
@@ -121,6 +126,13 @@ main section article img{
 main section article i,
 .descuentos{
     color: #39b54a;
+}
+
+.articulo-principal {
+    border: 1px solid #ebebeb; /* Borde superior de 1 píxel, línea sólida, color #ebebeb */
+    padding: 15px; /* Espacio interior de 15 píxeles en cada lado */
+    margin-bottom: 10px; /* Espacio entre artículos */
+    width: 300px; /* Ancho de la caja general del artículo */
 }
 
 footer{
