@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Roboto:wght@300;400&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+h3{
+    font-size: 24px;
+}
+
+p{
+    font-size: 12px;
+}
+
+.top{
+    padding: 5%;
+}
+
+header{
+    background-color: #EAC926;
+}
+
+.logomercado{
+    width: 100%;
+}
+
+header nav{
+    font-size: 12px;
+}
+
+ul li{
+    list-style: none;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+header .form .input{
+    background-color: #FFF;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 2px;
+}
+
+header .form .submit{
+    background-color: #FFF;
+    border: 1px solid #000;
+    color: #666;
+    width: 10%;
+    text-align: center;
+}
+
+.top p{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.burger-menu{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.fas.fa-bars{
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    padding: 10px;
+    margin: 10px 0px 20px 0px;
+}
+
+.articulo-principal{
+    width: 100%;
+}
+
+.precios{
+    font-size: 18px;
+}
+
+.descuentos{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.desc{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+h3, .desc{
+    color: #666;
+}
+
+.banner_img{
+    width: 100%;
+}
+
+main{
+    width: 90%;
+}
+
+main section article{
+    background-color: #FFF;
+}
+
+main section article img{
+    width: 100%;
+}
+
+main section article i,
+.descuentos{
+    color: #39b54a;
+}
+
+footer{
+    text-align: center;
+}
+
+footer h3{
+    color: #666;
+}
+
+footer section i{
+    font-size: 2em;
+    margin-top: 10px;
+    color: #1258C2;
+}
+
+.img_product{
+    width: 100%;
+}
+
