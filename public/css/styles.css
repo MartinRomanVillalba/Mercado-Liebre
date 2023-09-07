@@ -131,8 +131,7 @@ main section article i,
 .articulo-principal {
     border: 1px solid #ebebeb; /* Borde superior de 1 píxel, línea sólida, color #ebebeb */
     padding: 15px; /* Espacio interior de 15 píxeles en cada lado */
-    margin-bottom: 10px; /* Espacio entre artículos */
-    width: 300px; /* Ancho de la caja general del artículo */
+    width: 100%; /* Ancho de la caja general del artículo */
 }
 
 footer{
@@ -153,3 +152,32 @@ footer section i{
     width: 100%;
 }
 
+@media screen and (min-width: 361px){
+    article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .burger-menu{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 769px){
+    article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .burger-menu{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 360px){
+    .desc{
+        display: none;
+    }
+
+    nav{
+        display: none;
+    }
+}
