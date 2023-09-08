@@ -92,8 +92,7 @@ header .form .submit {
 .descuentos {
   font-size: 16px;
   font-weight: normal;
-  width: 70%;
-  margin-left: 10px;
+  width: 60%;
 }
 
 .desc {
@@ -173,6 +172,7 @@ main section article i,
   width: 100%; /* Ancho de la caja general del artículo */
   position: relative;
   display: flex;
+  flex-wrap: wrap;
 }
 
 footer {
