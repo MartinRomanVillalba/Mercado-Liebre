@@ -272,7 +272,7 @@ footer section i {
   }
 }
 
-@media (min-width: 481px) and (max-width: 768px){
+@media (min-width: 481px){
   main section div.productos article{
     width: 45%;
   }
@@ -373,4 +373,18 @@ footer section i {
   .descuentos{
     margin: 0;
   }
+}
+
+.datos{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
