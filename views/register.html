@@ -16,10 +16,10 @@
         <div class="logomercado">
           <img src="images/logo-mercado-liebre.svg" alt="Logo" />
         </div>
-        <div class="form" method="GET" action="#">
-          <div class="input">Buscar productos, marcas</div>
-          <div class="submit"><i class="fas fa-search"></i></div>
-        </div>
+        <form class="form" method="post" action="#">
+          <input type="text" class="input" placeholder="Buscar productos, marcas"></input>
+          <input type="submit" class="submit" value=""><i class="fas fa-search"></i></input>
+        </form>
         <h2 class="copy-header">
           <i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta
           de crédito
@@ -55,8 +55,8 @@
     </header>
 
     <main class="register">
-      <form action="/" method="post">
-        <label for="nya">Nombre y Apellido</label>
+      <form action="/" method="post" class="form-register">
+        <label for="nya" id="nya">Nombre y Apellido</label>
         <br />
         <input
           type="text"
@@ -82,7 +82,7 @@
         <br />
         <label for="domicilio">Domicilio</label>
         <br />
-        <input type="text" name="domicilio" placeholder="Domicilio" />
+        <input type="text" name="domicilio" placeholder="Introduzca su domicilio" />
         <br />
         <h4>Perfil de usuario</h4>
         <div class="perfil">

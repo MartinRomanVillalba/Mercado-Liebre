@@ -93,10 +93,15 @@ header .form .submit {
   min-width: 30px;
   color: #666;
   margin-left: 5px;
-  text-align: center;
-  padding-top: 3.5px;
   border: none;
   border-radius: 5px;
+}
+
+.fas.fa-search{
+  position: relative;
+  align-items: center;
+  right: 22px;
+  top: 5px;
 }
 
 .burger-menu {
@@ -383,20 +388,48 @@ footer section i {
   }
 }
 
+.register{
+  padding: 5px;
+  margin: 0 auto;
+}
+
+.form-register{
+  display: flex;
+  flex-direction: column;
+}
+
+.form-register label{
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.register input{
+  padding: 5px;
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.register form input[type="submit"],
+.register form input[type="reset"]{
+  background-color: red;
+  margin: 5px;
+}
+
+.register form input[type="file"]{
+  left: 50px;
+}
+
+.register form h4{
+  text-align: center;
+  margin: 5px;
+}
+
 .login{
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-}
-
-.datos input{
-  width: 240px;
-  background-color: white;
-  border: none;
-  padding: 5px 10px;
-  border-radius: 10px;
-  outline: none;
-  font-size: 14px;
-  color: white;
 }
