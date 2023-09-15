@@ -4,7 +4,9 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  /* outline: 1px solid black; */
 }
+
 body {
   font-family: "Roboto", sans-serif;
   background-color: #ebebeb;
@@ -26,18 +28,18 @@ header {
 .top{
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   padding: 5px;
 }
 
 header div.logomercado{
+  width: 50%;
   padding: 10px;
 }
 
 header .form{
+  width: 50%;
   display: flex;
-  padding: 2px;
-  font-size: 20px;
-  align-items: center;
 }
 
 .logomercado {
@@ -47,6 +49,8 @@ header .form{
 .copy-header{
   font-weight: 400;
   text-align: center;
+  width: 100%;
+  font-size: 13px;
 }
 
 .bottom{
@@ -65,26 +69,34 @@ header .form{
   color: #000;
   display: inline-block;
   padding: 5px 0;
-  font-size: 17px;
+  font-size: 15px;
 }
 
 header .form .input {
   background-color: #fff;
-  border: 1px solid #000;
   outline: none;
   color: #666;
-  padding: 5px;
+  padding: 4px;
+  width: 90%;
+  height: 25px;
+  border: none;
   font-size: 15px;
   border-radius: 5px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 header .form .submit {
   background-color: #fff;
-  border: 1px solid #000;
-  color: #666;
   width: 10%;
+  min-width: 30px;
+  color: #666;
   margin-left: 5px;
   text-align: center;
+  padding-top: 3.5px;
+  border: none;
+  border-radius: 5px;
 }
 
 .burger-menu {
@@ -191,9 +203,9 @@ main section article i,
 }
 
 .articulo-principal {
-  border: 1px solid #ebebeb; /* Borde superior de 1 píxel, línea sólida, color #ebebeb */
-  padding: 15px; /* Espacio interior de 15 píxeles en cada lado */
-  width: 100%; /* Ancho de la caja general del artículo */
+  border: 1px solid #ebebeb;
+  padding: 15px;
+  width: 100%;
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -241,11 +253,6 @@ footer section i {
 
   main section div.productos article{
     width: 100%;
-  }
-
-  .precios,
-  .descuentos{
-    width: 50%;
   }
 
   .descuentos{
@@ -303,7 +310,6 @@ footer section i {
 
   .copy-header{
     max-width: 350px;
-    text-align: right;
   }
 
   .bottom{
@@ -368,18 +374,13 @@ footer section i {
 
   .form{
     width: 20%;
+    margin-left: 150px;
   }
 
   .descuentos{
     margin: 0;
+    margin-left: 1px;
   }
-}
-
-.datos{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
 }
 
 .login{
@@ -387,4 +388,15 @@ footer section i {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+}
+
+.datos input{
+  width: 240px;
+  background-color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 10px;
+  outline: none;
+  font-size: 14px;
+  color: white;
 }

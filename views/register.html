@@ -54,77 +54,86 @@
       </a>
     </header>
 
-    <form action="/" method="get">
-      <div class="datos">
+    <main class="register">
+      <form action="/" method="post">
         <label for="nya">Nombre y Apellido</label>
-        <div class="nya">
-          <input
-            type="text"
-            placeholder="Introduzca su nombre y apellido"
-            id="nya"
-            name="nya"
-          />
-        </div>
+        <br />
+        <input
+          type="text"
+          placeholder="Introduzca su nombre y apellido"
+          name="nya"
+        />
+        <br />
         <label for="username">Nombre de usuario</label>
-        <div class="username">
-          <input
-            type="text"
-            name="username"
-            id="username"
-            placeholder="Introduzca su nombre de usuario"
-          />
-        </div>
+        <br />
+        <input
+          type="text"
+          name="username"
+          placeholder="Introduzca su nombre de usuario"
+        />
+        <br />
         <label for="email">E-Mail</label>
-        <div class="email">
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Introduzca su E-Mail"
-          />
-        </div>
+        <br />
+        <input type="email" name="email" placeholder="Introduzca su E-Mail" />
+        <br />
         <label for="nacimiento">Fecha de nacimiento</label>
-        <div class="nacimiento">
-          <input type="date" name="nacimiento" id="nacimiento" />
-        </div>
+        <br />
+        <input type="date" name="nacimiento" id="nacimiento" />
+        <br />
         <label for="domicilio">Domicilio</label>
-        <div class="domicilio">
-          <input type="text" name="domicilio" id="domicilio" />
-        </div>
-        <label for="perfil">Perfil de usuario</label>
+        <br />
+        <input type="text" name="domicilio" placeholder="Domicilio" />
+        <br />
+        <h4>Perfil de usuario</h4>
         <div class="perfil">
-          <input type="radio" name="perfil" id="perfil" />Comprador
-          <input type="radio" name="perfil" id="perfil" />Vendedor
+          <input type="radio" name="perfil" id="buy" value="buy" />
+          <label for="buy">Comprador</label>
+          <input type="radio" name="perfil" id="perfil" value="sell" />
+          <label for="sell">Vendedor</label>
         </div>
-        <label for="interes">Categorías de interés</label>
+
+        <h4>Categorías de interés</h4>
         <div class="interes">
-          <input type="checkbox" name="interes" id="interes" />Electro
-          <input type="checkbox" name="interes" id="interes" />Moda
-          <input type="checkbox" name="interes" id="interes" />Hogar
-          <input type="checkbox" name="interes" id="interes" />Juguetería
-          <input type="checkbox" name="interes" id="interes" />Vida sana
+          <div>
+            <input type="checkbox" name="interes" id="a" value="a" />
+            <label for="a">Electro</label>
+          </div>
+          <div>
+            <input type="checkbox" name="interes" id="b" value="b" />
+            <label for="b">Moda</label>
+          </div>
+          <div>
+            <input type="checkbox" name="interes" id="c" value="c" />
+            <label for="c">Hogar</label>
+          </div>
+          <div>
+            <input type="checkbox" name="interes" id="d" value="d" />
+            <label for="d">Juguetería</label>
+          </div>
+          <div>
+            <input type="checkbox" name="interes" id="e" value="e" />
+            <label for="e">Vida sana</label>
+          </div>
         </div>
-        <label for="foto">Foto de usuario</label>
-        <div class="foto">
-          <input type="file" name="foto" id="foto" accept=".jpg" />
-        </div>
+
+        <h4>Foto de usuario</h4>
+        <input type="file" name="foto" id="foto" accept=".jpg" />
+        <br />
+        <br />
         <label for="password">Contraseña</label>
-        <div class="password">
-          <input type="password" name="password" id="password" />
-        </div>
+        <br>
+        <input type="password" name="password" id="password" />
+        <br />
         <label for="password-confirm">Confirmar contraseña</label>
-        <div class="password-confirm">
-          <input
-            type="password"
-            name="password-confirm"
-            id="password-confirm"
-          />
-        </div>
-        <div class="buttons">
-          <button type="submit">Enviar</button>
-          <button type="reset">Borrar datos</button>
-        </div>
-      </div>
-    </form>
+        <br />
+        <input type="password" name="password-confirm" id="password-confirm" />
+        <br />
+        <br />
+        <input type="submit" value="Enviar" />
+        <input type="reset" value="Borrar" />
+        <br />
+        <br />
+      </form>
+    </main>
   </body>
 </html>
