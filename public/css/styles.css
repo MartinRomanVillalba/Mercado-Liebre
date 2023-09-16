@@ -388,6 +388,12 @@ footer section i {
   }
 }
 
+@media (max-width: 1024px){
+  header .form .submit{
+    width: 0;
+  }
+}
+
 .register{
   padding: 5px;
   margin: 0 auto;
@@ -405,7 +411,7 @@ footer section i {
 }
 
 .register input{
-  padding: 5px;
+  padding: 10px;
   border: none;
   border-radius: 10px;
   width: 100%;
@@ -414,12 +420,8 @@ footer section i {
 
 .register form input[type="submit"],
 .register form input[type="reset"]{
-  background-color: red;
+  border: 1px solid grey;
   margin: 5px;
-}
-
-.register form input[type="file"]{
-  left: 50px;
 }
 
 .register form h4{
@@ -428,8 +430,29 @@ footer section i {
 }
 
 .login{
+  padding: 5px;
+  margin: 0 auto;
+}
+
+.form-login label{
   display: flex;
   justify-content: center;
-  flex-direction: column;
-  align-items: center;
+  margin-top: 10px;
+}
+
+.login input{
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.login form input[type=submit]{
+  border: 1px solid grey;
+  margin-top: 10px;
+  background-color: blue;
+  color: white;
+  font-size: 15px;
 }
