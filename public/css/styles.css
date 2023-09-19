@@ -20,9 +20,13 @@ p {
   font-size: 12px;
 }
 
-header {
+header{
   background-color: #eac926;
   padding: 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
 }
 
 .top{
@@ -40,6 +44,10 @@ header div.logomercado{
 header .form{
   width: 50%;
   display: flex;
+}
+
+.banner{
+  margin-top: 170px;
 }
 
 .logomercado {
@@ -240,7 +248,7 @@ footer section i {
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
   }
 
-  .desc {
+  .desc{
     display: block;
   }
 
@@ -281,6 +289,10 @@ footer section i {
   .submit{
     border-radius: 5px;
     align-items: center;
+  }
+
+  .login{
+    margin-top: 270px;
   }
 }
 
@@ -386,6 +398,10 @@ footer section i {
     margin: 0;
     margin-left: 1px;
   }
+
+  .banner{
+    margin-top: 202px;
+  }
 }
 
 @media (max-width: 1024px){
@@ -440,13 +456,51 @@ footer section i {
   margin-top: 10px;
 }
 
+.interes{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.interes div{
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.interes div input{
+  margin-right: 10px;
+}
+
+.perfil{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 300px;
+  margin: auto;
+}
+
+.perfil label{
+  margin-top: 10px;
+}
+
+.perfil input{
+  margin-top: 10px;
+  width: 20px;
+}
+
+.login{
+  width: 70%;
+  margin-top: 200px;
+}
+
 .login input{
   padding: 10px;
   border: none;
   border-radius: 10px;
   width: 100%;
   text-align: center;
-  margin-top: 5px;
+  margin-top: 10px;
 }
 
 .login form input[type=submit]{
@@ -455,4 +509,13 @@ footer section i {
   background-color: blue;
   color: white;
   font-size: 15px;
+}
+
+.login form input[type=submit]:hover{
+  background-color: #0022AA;
+}
+
+.copyright{
+  font-size: 10px;
+  margin-top: 10px;
 }

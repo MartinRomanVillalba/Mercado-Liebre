@@ -56,33 +56,35 @@
 
     <main class="register">
       <form action="/" method="post" class="form-register">
-        <label for="nya" id="nya">Nombre y Apellido</label>
+        <label for="nya" id="nya"><b>Nombre y Apellido</b></label>
         <br />
         <input
           type="text"
           placeholder="Introduzca su nombre y apellido"
           name="nya"
+          required
         />
         <br />
-        <label for="username">Nombre de usuario</label>
+        <label for="username"><b>Nombre de usuario</b></label>
         <br />
         <input
           type="text"
           name="username"
           placeholder="Introduzca su nombre de usuario"
+          required
         />
         <br />
-        <label for="email">E-Mail</label>
+        <label for="email"><b>E-Mail</b></label>
         <br />
-        <input type="email" name="email" placeholder="Introduzca su E-Mail" />
+        <input type="email" name="email" placeholder="Introduzca su E-Mail" required/>
         <br />
-        <label for="nacimiento">Fecha de nacimiento</label>
+        <label for="nacimiento"><b>Fecha de nacimiento</b></label>
         <br />
-        <input type="date" name="nacimiento" id="nacimiento" />
+        <input type="date" name="nacimiento" id="nacimiento" required/>
         <br />
-        <label for="domicilio">Domicilio</label>
+        <label for="domicilio"><b>Domicilio</b></label>
         <br />
-        <input type="text" name="domicilio" placeholder="Introduzca su domicilio" />
+        <input type="text" name="domicilio" placeholder="Introduzca su domicilio" required/>
         <br />
         <h4>Perfil de usuario</h4>
         <div class="perfil">
@@ -117,16 +119,16 @@
         </div>
 
         <h4>Foto de usuario</h4>
+        <div class="fotos">
         <input type="file" name="foto" id="foto" accept=".jpg" />
-        <br />
-        <br />
-        <label for="password">Contraseña</label>
+      </div>
+        <label for="password"><b>Contraseña</b></label>
         <br>
-        <input type="password" name="password" id="password" />
+        <input type="password" name="password" id="password" required/>
         <br />
-        <label for="password-confirm">Confirmar contraseña</label>
+        <label for="password-confirm"><b>Confirmar contraseña</b></label>
         <br />
-        <input type="password" name="password-confirm" id="password-confirm" />
+        <input type="password" name="password-confirm" id="password-confirm" required/>
         <br />
         <br />
         <input type="submit" value="Enviar" />
@@ -135,5 +137,35 @@
         <br />
       </form>
     </main>
+
+    <footer>
+      <section>
+        <i class="fas fa-credit-card"></i>
+        <h3>Pagá con tarjeta o en efectivo</h3>
+        <p>
+          Con MercadoLiebreCash, tenés cuotas sin interés con tarjeta o efectivo
+          en puntos de pago. ¡Y siempre es seguro!
+        </p>
+      </section>
+      <section>
+        <i class="fas fa-gift"></i>
+        <h3>Envío gratis desde $ 2.500</h3>
+        <p>
+          Solo por estar registrad@ en MercadoLiebre tenés envíos gratis en
+          miles de productos. Es un beneficio de Mercado Puntos.
+        </p>
+      </section>
+      <section>
+        <i class="fas fa-user-shield"></i>
+        <h3>Seguridad, de principio a fin</h3>
+        <p>
+          ¿No te gusta? ¡Devolvelo! En MercadoLiebre, no hay nada que no puedas
+          hacer, porque estás siempre protegid@.
+        </p>
+      </section>
+      <section>
+        <h3 class="copyright">Copyright © 1999-2020 MercadoLiebre S.R.L.</h3>
+      </section>
+    </footer>
   </body>
 </html>
