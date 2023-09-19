@@ -164,6 +164,29 @@ main {
 main section article {
   background-color: #fff;
   margin: 10px 0px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+  transition: box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+main section article:hover{
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+main section article .articulo-principal .desc{
+  display: none;
+}
+
+main section article:hover .articulo-principal .desc{
+  display: block;
+}
+
+main section article i.fas.fa-truck{
+  transition: transform 0.3s ease;
+}
+
+main section article:hover i.fas.fa-truck{
+  transform: rotate(-90deg);
 }
 
 main section h3 {
@@ -231,12 +254,17 @@ footer {
 
 footer h3 {
   color: #666;
+  font-size: 15px;
 }
 
 footer section i {
   font-size: 2em;
   margin-top: 10px;
   color: #1258c2;
+}
+
+footer section i:hover{
+  color: #eac926;
 }
 
 .img_product {
@@ -402,9 +430,17 @@ footer section i {
   .banner{
     margin-top: 202px;
   }
+
+  footer{
+    display: flex;
+  }
+
+  footer p{
+    font-size: 10px;
+  }
 }
 
-@media (max-width: 1024px){
+@media (min-width: 1024px){
   header .form .submit{
     width: 0;
   }
@@ -413,6 +449,7 @@ footer section i {
 .register{
   padding: 5px;
   margin: 0 auto;
+  margin-top: 205px;
 }
 
 .form-register{
@@ -518,4 +555,9 @@ footer section i {
 .copyright{
   font-size: 10px;
   margin-top: 10px;
+  text-align: left;
+}
+
+.login-footer{
+  margin-top: 70px;
 }
